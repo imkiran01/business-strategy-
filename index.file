@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Strategy - 20 Facts by Nson</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .fact, .about {
+            background: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Business Strategy - 20 Facts by Nson</h1>
+</header>
+
+<nav>
+    <a href="#facts">Facts</a>
+    <a href="#about">About</a>
+</nav>
+
+<div class="container" id="facts">
+    <h2>20 Facts</h2>
+    <div id="factList"></div>
+</div>
+
+<div class="container" id="about">
+    <h2>About</h2>
+    <div class="about">
+        <p>This website presents a collection of 20 essential facts that can help businesses develop effective strategies. The insights provided here are based on current market trends and consumer behavior, aimed at guiding entrepreneurs and business leaders in making informed decisions.</p>
+        <p>The goal of this website is to serve as a resource for understanding key factors that influence business success, including sustainability, technology adoption, and customer engagement. By leveraging these facts, businesses can enhance their strategies and achieve long-term growth.</p>
+    </div>
+</div>
+
+<script>
+    const facts = [
+        "Market demand is increasing for eco-friendly products.",
+        "Competitors are focusing on digital marketing strategies.",
+        "Customer preferences are shifting towards personalized experiences.",
+        "Social media engagement is crucial for brand awareness.",
+        "E-commerce sales are growing at a rapid pace.",
+        "Sustainability is becoming a key purchasing factor.",
+        "Technology adoption is essential for operational efficiency.",
+        "Customer feedback is vital for product development.",
+        "Partnerships can enhance market reach.",
+        "Pricing strategies must be competitive yet profitable.",
+        "Employee satisfaction impacts customer service quality.",
+        "Data analytics can drive informed decision-making.",
+        "Brand loyalty is influenced by customer experience.",
+        "Regulatory compliance is necessary for market entry.",
+        "Innovation is key to staying ahead of competitors.",
+        "Supply chain management affects product availability.",
+        "Local market knowledge can provide a competitive edge.",
+        "Financial health is critical for long-term sustainability.",
+        "Community engagement can enhance brand reputation.",
+        "Continuous learning and adaptation are essential for growth."
+    ];
+
+    const factList = document.getElementById('factList');
+
+    facts.forEach((fact, index) => {
+        const factDiv = document.createElement('div');
+        factDiv.className = 'fact';
+        factDiv.innerHTML = `<strong>Fact ${index + 1}:</strong> ${fact}`;
+        factList.appendChild(factDiv);
+    });
+</script>
+
+</body>
+</html>
